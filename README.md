@@ -2,7 +2,7 @@
 ----
 <img src="https://img.shields.io/static/v1?label=Status&message=incomplete&color=ff0000&style=for-the-badge&logo=ghost"/>
  
-<p align="center">As aulas estão disponíveis no canal Web Dev Simplified <a href="https://www.youtube.com/watch?v=28VfzEiJgy4&t=1300s" > Aqui </a> </p>
+<p align="center">A aula esta disponível no canal KnifeCircus <a href="https://www.youtube.com/watch?v=bG2BmmYr9NQ&t=310s" > Aqui </a> </p>
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
