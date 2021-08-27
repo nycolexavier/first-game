@@ -1,35 +1,19 @@
+/* Configuração básica para tirar os preenchimentos padrões do arquivo*/
 * {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
-.game {
+/*Estilo do container*/
+#game-container {
     width: 500px;
     height: 200px;
     border: 1px solid black;
     margin: auto;
 }
 
-#character {
-    width: 20px;
-    height: 50px;
-    background-color: red;
-    position: relative;
-    top: 150px;
-}
-
-.animate {
-    animation: jump 0.3s linear;
-}
-
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
-}
-
+/*Estilo do personagem*/
 #block {
     background-color: blue;
     width: 20px;
@@ -40,9 +24,33 @@
     animation: block 5s infinite linear;
 }
 
+/*Animação do personagem*/
 @keyframes block {
     0% {left: 500px}
     100%{left:-20px}
+}
+
+/*Estilo do obstaculo*/
+#character {
+    width: 20px;
+    height: 50px;
+    background-color :red;
+    position: relative;
+    top: 150px;
+    animation: jump 600ms;
+}
+
+/*Facilitador pro JavaScript, pra colocar remove e add no character*/
+.animate {
+    animation: jump 0.3s linear;
+} 
+
+/*Animação para o obstaculo pular*/
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
 }
 
 p {
