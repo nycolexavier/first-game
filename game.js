@@ -1,6 +1,9 @@
 // add vars 
+// chamando o character do html
 var character = document.getElementById("character");
+// chamando o block do html
 var block = document.getElementById("block");
+// pra contagem dos pontos
 var counter = 0;
 
 function jump(){
@@ -8,7 +11,7 @@ function jump(){
     character.classList.add("animate");
     setTimeout(function(){
         character.classList.remove("animate");
-    },300)
+    },600)
 }
 
 var checkDead = setInterval(function () {
