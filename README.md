@@ -1,6 +1,6 @@
 ![first-game-banner](https://user-images.githubusercontent.com/74930052/131051867-5d1e3a1e-a8e2-432f-8883-ccf66ee6e3ed.png)
 ----
-<img src="https://img.shields.io/static/v1?label=Status&message=incomplete&color=ff0000&style=for-the-badge&logo=ghost"/>
+<img src="https://img.shields.io/static/v1?label=Status&message=complete&color=00800&style=for-the-badge&logo=ghost"/>
  
 <p align="center">A aula esta disponível no canal KnifeCircus <a href="https://www.youtube.com/watch?v=bG2BmmYr9NQ&t=310s" > Aqui </a> </p>
 
@@ -17,7 +17,7 @@ Nesse repositório guardo o jogo que foi proposto nessa aula.
 
 ### Features
 
-- [ ] The Easiest Javascript Game Ever
+- [X] The Easiest Javascript Game Ever
 
 ### Tecnologias
 
