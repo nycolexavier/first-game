@@ -1,29 +1,31 @@
 // add vars 
-// chamando o character do html
-var character = document.getElementById("character");
-// chamando o block do html
-var block = document.getElementById("block");
-// pra contagem dos pontos
-var counter = 0;
+// chamando o quadrado do html
+let quadrado = document.querySelector('#quadrado');
+// chamando o personagem do html
+let personagem = document.querySelector("#personagem");
 
-function jump(){
-    if (character.classList.contains("animate")) {return}
-    character.classList.add("animate");
+function pular () {
+    if (quadrado.classList != 'animar') {
+        quadrado.classList.add('animar')
+    }
+
     setTimeout(function(){
-        character.classList.remove("animate");
-    },600)
+        quadrado.classList.remove('animar')
+    }, 600)
 }
 
-var checkDead = setInterval(function () {
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if (blockLeft < 20 && blockLeft >- 20 && characterTop >= 130 ) {
-        block.style.animation = "none";
-        alert("Game Over. score: " + Math.floor(counter/100))
-        counter = 0;
-        block.style.animation = "block 1s infinite linear";
-    } else {
-        counter ++;
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100)
+var testarColisao = setInterval(function(){
+    var topoQuadrado = parseInt(
+        window.getComputedStyle(quadrado).getPropertyValue('top')
+    )
+    var EsquerdaPersonagem = parseInt(
+        window.getComputedStyle(personagem).getPropertyValue('left')
+    )
+
+
+    if(EsquerdaPersonagem < 20 && EsquerdaPersonagem > 0 && topoQuadrado >= 130) {
+        personagem.style.animation = 'none'
+        personagem.style.display = 'none'
+        alert('Você perdeu!')
     }
-}, 10);
+},10)
